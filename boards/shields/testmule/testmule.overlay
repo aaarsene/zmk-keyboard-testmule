@@ -35,4 +35,10 @@
         kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
     };
+
+    output_generic_0: output_generic_0 {
+		compatible = "zmk,output-generic";
+		#binding-cells = <0>;
+		control-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
+	};
 };
