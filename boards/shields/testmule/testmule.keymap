@@ -12,7 +12,7 @@
 	ob_erm0_in: ob_generic_erm0_in {
 		compatible = "zmk,output-behavior-generic"; 
 		#binding-cells = <0>;
-		device = <&output_generic_0>; delay = <1>; time-to-live-ms = <500>;
+		device = <&output_generic_0>; delay = <1>; time-to-live-ms = <100>;
 	};
 
 	erm0_obl__press_position_0 {
