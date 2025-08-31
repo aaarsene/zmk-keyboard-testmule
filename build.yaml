@@ -18,5 +18,5 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-board:: ["adafruit_kb2040"]
+board: ["adafruit_kb2040"]
 shield: ["testmule"]
