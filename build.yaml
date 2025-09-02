@@ -18,5 +18,7 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-board: ["adafruit_kb2040"]
-shield: ["testmule"]
+include:
+  - board: adafruit_kb2040
+    shield: testmule
+    snippet: zmk-usb-logging
