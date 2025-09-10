@@ -9,18 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-	ob_erm0_in: ob_generic_erm0_in {
+	sol_on: sol_on {
 		compatible = "zmk,output-behavior-generic"; 
 		#binding-cells = <0>;
-		device = <&output_generic_0>; delay = <1>; time-to-live-ms = <100>;
+		device = <&output_sol>; 
+		time-to-live-ms = <50>; // Durée d'activation du pin (dwell time)
+		force = <1>;
 	};
 
-	erm0_obl__press_position_0 {
+	sol_listener {
 		compatible = "zmk,output-behavior-listener";
 		layers = < 0 >;
-		sources = < OUTPUT_SOURCE_KEYCODE_STATE_CHANGE  >;
+		sources = < OUTPUT_SOURCE_POSITION_STATE_CHANGE >;
 	
-		bindings = < &ob_erm0_in >;
+		bindings = < &sol_on >;
 	};
 	
 	keymap {
@@ -33,4 +35,3 @@
 		};
 	};
 };
-

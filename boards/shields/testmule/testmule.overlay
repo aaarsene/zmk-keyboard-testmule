@@ -36,7 +36,7 @@
         transform = <&default_transform>; // Label of the matrix transform for this layout
     };
 
-    output_generic_0: output_generic_0 {
+    output_sol: output_sol {
 		compatible = "zmk,output-generic";
 		#binding-cells = <0>;
 		control-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
